@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Tab Name</title>
+            
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #bgPic {
+                background-image:url('/Lab8/image1.jpg');
+                height:100vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .ranDom {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                text-align:center;
+                padding:0 20px;
+            }
+
+            #bgPic h1 {
+                font-size: 10em;
+                color: yellow;
+            }
+
+            #bgPic h2 {
+                font-size: 4em;
+                color: yellow;
+            }
+
+            #bgPic p {
+                /* font-size: 3em; */
+                color: yellow;
+            }
+            
+            #indexBot {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-end;
+            }
+
+
+
+            .textCenter {
+                text-align: center;
+            }
+
+            .navBarProp a:link, a:visited {
+                /* can maybe use margin bottom on heading to create separation*/
+                margin-right: 30px;
+                text-decoration: none;
+                font-size: 3em;
+                color: tomato;
+            }
+
+            .navBarProp a:hover {
+                color: pink;
+            }
+
+                                                                .child {
+                                                                width: 50px;
+                                                                height: 50px;
+                                                                background-color: red;
+                                                                }
+
+            .positionTest {
+                position: absolute;
+                top: 99.5%;
+                left: 50%;
+                transform: translate(-50%, -100%);
+                /* stops links at the bottom of the page from wrapping */
+                white-space: nowrap;
+
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id = "bgPic">
+            
+            <h1>Webpage</h1>
+            <h2>Alvarado, Aaron</h2>
+
+            <div  class = "navBarProp positionTest">
+                <a href = "Page1.html">Page 1</a>
+                <a href = "Page2.html">Page 2</a>
+                <a href = "Page3.html">Page 3</a>
+                <a href = "Page4.html">Page 4</a>
+            </div>
+
+            <p><a href = index.html>something</a></p>
+                                                                <div class="child">
+
+                                                                </div>
+
+                <div>
+                
+        </div>
+
+
+
+        </div>
+
+        
+
+    </body>
+</html>
