@@ -3,83 +3,73 @@
     <head>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <title>Tab Name</title>
+        <link rel = "stylesheet" href = "/Lab8/style.css">
             
         <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-            }
+            #bgPic {
+                background: url("/Lab8/VVCPic1.jpg");
 
-            #indexTop {
-                background-image:url('/Lab8/image1.jpg');
                 height:100vh;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                display:flex;
+
+                display: flex;
                 flex-direction: column;
-                justify-content:center;
-                align-items:center;
-                text-align:center;
-                padding:0 20px;
+                justify-content: center;
+                align-items: center;
+                
             }
 
-            #indexTop h1 {
+            #bgPic h1 {
                 font-size: 10em;
-                color: yellow;
+                color: gold;
             }
 
-            #indexTop h2 {
+            #bgPic h2 {
                 font-size: 4em;
-                color: yellow;
+                color: gold;
             }
 
-            #indexTop p {
-                font-size: 2em;
-                color: yellow;
-                justify-content: flex-end;
-            }
-            
-            .textCenter {
-                text-align: center;
-            }
-
-            .navBarProp a:link {
-                margin-right: 10px;
+            .navBarProp a:link, a:visited {
+                /* can maybe use margin bottom on heading to create separation*/
+                margin-right: 40px;
                 text-decoration: none;
+                font-size: 3em;
+                color: tomato;
             }
 
+            .navBarProp a:hover {
+                color: gold;
+                background: gray;
+                padding: 0.1em;
+            }
+
+            .positionTest {
+                position: absolute;
+                /* how far away from the top it is */
+                top: 99.5%;
+                /* how far away from the left it is, this centers it */
+                left: 50%;
+                /* positions the middle of the object, helpful for when zooming in and out */
+                transform: translate(-50%, -100%);
+                /* stops links at the bottom of the page from wrapping */
+                white-space: nowrap;
+            }
         </style>
     </head>
 
     <body>
-        <header id = "indexTop">
-            <h1>Webpage</h1>
-            <h2>Alvarado, Aaron</h2>
-            <p>Something</p>
-
-        </header>
-
-        <ul class="navBar">
-            <li><a href="Page1.html">Home page</a></li>
-            <li><a href="Page2.html">Musings</a></li>
-            <li><a href="Page3.html">My town</a>
-            <li><a href="Page4.html">Links</a>
-        </ul>
-
-        <p class = "navBarProp textCenter"><a href = "Page1.html">Page 1</a>
-            <a href = "Page2.html">Page 2</a>
-        </p>
-
-        <div class = "navBarProp textCenter">
-            <br>
-            <a href = "Page1.html">Page 1</a>
-            <a href = "Page2.html">Page 2</a>
-            <a href = "Page3.html">Page 3</a>
-            <a href = "Page4.html">Page 4</a>
+        <div id = "bgPic">
+            <h1>About VVC</h1>
+            <h2>by Aaron A.</h2>
         </div>
-        
 
-
+        <div  class = "navBarProp positionTest">
+                <a href = "Page1.html">VVC Facts</a>
+                <a href = "Page2.html">Degrees</a>
+                <a href = "Page3.html">Student Resources</a>
+                <a href = "Page4.html">Map</a>
+        </div>
     </body>
 </html>

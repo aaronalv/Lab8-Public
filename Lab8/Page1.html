@@ -1,47 +1,67 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
     <head>
-        <title>Pageo Uno</title>
+        <title>Fun Facts</title>
+        <link rel = "stylesheet" href = "/Lab8/style.css">
+
         <style type= "text/css">
-            .centered {
-                display:flex;
-                flex-direction:column;
-                justify-content:center;
-                 min-height:100vh;
-                 align-items:center
-            }
+            #bgPic {
+                background: url("/Lab8/VVCPic3.jpg");
 
-             h1 {
-                 color: tomato;
-                 size: 10em;
-             }
+                height:100vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
 
-            .leftText {
-                float: left;
-                margin-right: 15px;
-            }
-
-            .rightText {
-
-            }
-
-            .leftImage {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 
-
             }
 
-            .rightImage {
+            #bgPic h1 {
+                font-size: 10em;
+                color: gold;
+            }
+
+            #bgPic h2 {
+                font-size: 4em;
+                color: gold;
+            }
+
+            .VVCFacts {
+                margin-left: 3em;
+                font-size: 3em;
+                color: seagreen;
+            }
+
+            img {
                 float: right;
-                margin-left: 15px;
+                margin: 5em;
+                height: 50%;
             }
-
         </style>
     </head>
-    <body class = "centered">
-        <h1>Hello</h1>
+    <body>
+        <div id = "bgPic">
+            <div class = "grayBox">
+                <h1 style="font-size: 7.5em; margin-left: 0.5em;">VVC Facts</h1>
+                <ul class = "VVCFacts">
+                    <li>Located in Victorville, California</li>
+                    <li>Part of the California Community College System</li>
+                    <li>Closest colleges are Chaffey College, San Bernandino Valley College, and Barstow Community College</li>
+                    <li>District includes Victorville, Hesperia, Apple Valley, Phelan, and Adelanto</li>
+                    <li>Created by public vote in 1960</li>
+                    <li>First classes were held in 1961 at Victor Valley High School</li>
+                </ul>
+                <img src = "/Lab8/VVCPic6.jpg">
+            </div>
 
-        <p><img class = "rightImage" src = pineapple.jpg>g rssssssssssssssssssssssssssssssssssssssssssssssssandom</p>
-        <p>something else</p>
-        
+
+            <div  class = "homeNavBar navBarPos">
+                <a href = "index.html">Home</a>
+            </div>
+        </div> 
     </body>
 </html>

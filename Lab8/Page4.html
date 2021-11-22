@@ -2,45 +2,79 @@
 <html>
     <head>
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title>Tab Name</title>
+        <title>VVC Map</title>
+        <link rel = "stylesheet" href = "/Lab8/style.css">
             
         <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            background-image:url('/Lab8/image1.jpg');
+            #bgPic {
+                background: url("/Lab8/VVCPic2.jpg");
+
                 height:100vh;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-        }
 
-        .text {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center; /** Y-axis align **/
-            justify-content: center; /** X-axis align **/
-        }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
 
-        .text h1 {
-            font-size: 10em;
-            color:yellow;
-        }
+            #bgPic h1 {
+                font-size: 10em;
+                color: gold;
+            }
+
+            #bgPic h2 {
+                font-size: 4em;
+                color: gold;
+            }
+
+            #bgPic p {
+                /* font-size: 3em; */
+                color: yellow;
+            }
+
+            
+            .mapPosition {
+                position: absolute;
+                top: 100%;
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+
+            .VVCMap {
+                width: 40em;
+                height: 40em;
+            }
+
+            .directoryPosition {
+                position: absolute;
+                top: 75%;
+                left: 0%;
+                transform: translate(0%, -100%);
+            }
+
+            .VVCMapDirectory {
+                width: 50em;
+                height: 20em;
+            }
 
         </style>
     </head>
 
     <body>
-        <div class="container text">
-            <h1>Your text</h1>
-            <br>
-            <p>Alvarado, Aaron</p>
-          </div>
+        <div id = "bgPic">
+            <div>
+            <h1 class = "TitlePosition">VVC Map</h1>
+            </div>
+            <img src = "/Lab8/VVCMap.png" class = "VVCMap mapPosition">
 
+            <img src = "/Lab8/VVCMapDirectory.png" class = "VVCMapDirectory directoryPosition">
+
+            <div  class = "homeNavBar navBarPos">
+                <a href = "index.html">Home</a>
+            </div>
     </body>
 </html>
